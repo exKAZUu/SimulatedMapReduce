@@ -3,7 +3,7 @@
 ## What Is This
 
 This repository provides a Maven project as a pre-assignment for [BIGCHA 2015](http://bigcha.net/).
-The project includes a simulated Hadoop MapReduce framework which I developed.
+The project includes a simulated Hadoop MapReduce framework working on a pure Java environment.
 Note that this simulated framework has some differences from the official framework.
 
 Please clone this repository and import it as a Maven project into Eclipse (or Intellij IDEA).
