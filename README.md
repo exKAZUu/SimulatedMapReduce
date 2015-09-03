@@ -2,7 +2,7 @@
 
 ## What Is This
 
-This repository provides a Maven project as a pre-assignment.
+This repository provides a Maven project as a pre-assignment for [BIGCHA 2015](http://bigcha.net/).
 Please clone this repository and import it as a Maven project into Eclipse (or Intellij IDEA).
 You should see the detailed instructions in the Excercise[1-6]Main classes.
 
