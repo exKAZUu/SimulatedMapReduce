@@ -1,5 +1,11 @@
 # SimulatedMapReduce
 
+## What Is This
+
+This repository provides a Maven project as a pre-assignment.
+Please clone this repository and import it as a Maven project into Eclipse (or Intellij IDEA).
+You should see the detailed instructions in the Excercise[1-6]Main classes.
+
 ## How to Import Excercise Projects
 
 1. Run [Eclipse IDE for Java Developers](http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/marsr)
