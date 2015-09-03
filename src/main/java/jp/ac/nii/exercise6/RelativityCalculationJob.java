@@ -16,6 +16,9 @@ import jp.ac.nii.mapreduceframework.NullWritable;
  */
 public class RelativityCalculationJob {
 
+	/**
+	 * このメソッドは完成しています。
+	 */
 	public static Job<Long, String, String, String, NullWritable, String> create() {
 		Job<Long, String, String, String, NullWritable, String> job = Job.getInstance();
 
@@ -28,7 +31,7 @@ public class RelativityCalculationJob {
 		FileInputFormat.addInputPath(job, Paths.get(FileNameConstants.NUMERATOR));
 		FileOutputFormat.setOutputPath(job, Paths.get(FileNameConstants.RELATED_GOODS));
 
-		// TODO: RelativityCalculationSortComparator, RelativityCalculationPartitioner, 
+		// TODO: ずっと下にある RelativityCalculationSortComparator, RelativityCalculationPartitioner, 
 		// RelativityCalculationGroupComparator クラスを修正しよう！
 		
 		// ヒント: RelativityCaclulationMapperクラスをよく読もう
