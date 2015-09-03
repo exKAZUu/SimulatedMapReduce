@@ -21,4 +21,4 @@ Modify `jp.ac.nii.exercise4.AverageCalculationMapper/Reducer` and `jp.ac.nii.exe
 5. Excercise 5  
 Modify `jp.ac.nii.exercise5.AverageCalculationMapper/Reducer` and `jp.ac.nii.exercise5.StandardDeviationCalculationMapper/Reducer` classes.
 6. Excercise 6  
-Modify `jp.ac.nii.exercise6.AllPairAggregationMapper/Reducer`, `jp.ac.nii.exercise6.RelativityCalculationJob/Reducer`, and `jp.ac.nii.exercise6.SpecPairAggregationMapper/Reducer` classes.
+Modify `jp.ac.nii.exercise6.AllPairAggregationMapper/Reducer`, `jp.ac.nii.exercise6.RelativityCalculationReducer/Job`, and `jp.ac.nii.exercise6.SpecPairAggregationMapper/Reducer` classes.
