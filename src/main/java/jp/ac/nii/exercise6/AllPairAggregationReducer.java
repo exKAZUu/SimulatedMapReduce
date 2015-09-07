@@ -16,7 +16,7 @@ public class AllPairAggregationReducer extends Reducer<String, Integer, NullWrit
 	@Override
 	public void reduce(String key, Iterable<Integer> values, Context context) {
 		int sum = 0;
-		// TODO: 同時に購入された商品ペアデータから、Keyの商品の頻度を計算しよう
+		// TODO: ワードカウントと同じ要領でvaluesの合計を計算して、keyの商品の出現回数を計算しよう
 		
 		// キーにNullWritableを使うことで、「キー[タブ]バリュー」という出力の代わりに、「バリュー」という出力を実現する
 		context.write(nullWritable, key + "," + sum);

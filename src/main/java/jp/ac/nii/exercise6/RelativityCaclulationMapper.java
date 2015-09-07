@@ -47,6 +47,8 @@ public class RelativityCaclulationMapper extends Mapper<Long, String, String, St
 	private class NumeratorWriter implements Writer {
 		@Override
 		public void write(Long key, String value, Context context) {
+			// SpecPairAggregationMapper によって反転するペア（「商品X,商品Y」と「商品Y,商品X」）をひとまとめにして購入回数を計算したが、
+			// 関連度を計算するときは「商品X」からも「商品Y」からも関連度を計算したいので、両方のペアで扱えるように分子データを複製する
 			String[] goodsPairAndNum = value.split(",");
 			context.write(goodsPairAndNum[0], goodsPairAndNum[1] + "," + goodsPairAndNum[2]);
 			context.write(goodsPairAndNum[1], goodsPairAndNum[0] + "," + goodsPairAndNum[2]);
