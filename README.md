@@ -1,5 +1,14 @@
 # SimulatedMapReduce
 
+## What Is This
+
+This repository provides a Maven project as a pre-assignment for [BIGCHA 2015](http://bigcha.net/).
+The project includes a simulated Hadoop MapReduce framework working on a pure Java environment.
+Note that this simulated framework has some differences from the official framework.
+
+Please clone this repository and import it as a Maven project into Eclipse (or Intellij IDEA).
+You should see the detailed instructions in the Excercise[1-6]Main classes.
+
 ## How to Import Excercise Projects
 
 1. Run [Eclipse IDE for Java Developers](http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/marsr)
@@ -21,4 +30,4 @@ Modify `jp.ac.nii.exercise4.AverageCalculationMapper/Reducer` and `jp.ac.nii.exe
 5. Excercise 5  
 Modify `jp.ac.nii.exercise5.AverageCalculationMapper/Reducer` and `jp.ac.nii.exercise5.StandardDeviationCalculationMapper/Reducer` classes.
 6. Excercise 6  
-Modify `jp.ac.nii.exercise6.AllPairAggregationMapper/Reducer`, `jp.ac.nii.exercise6.RelativityCalculationJob/Reducer`, and `jp.ac.nii.exercise6.SpecPairAggregationMapper/Reducer` classes.
+Modify `jp.ac.nii.exercise6.AllPairAggregationMapper/Reducer`, `jp.ac.nii.exercise6.RelativityCalculationReducer/Job`, and `jp.ac.nii.exercise6.SpecPairAggregationMapper/Reducer` classes.
