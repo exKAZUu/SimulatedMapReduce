@@ -2,7 +2,7 @@
 
 ## What Is This
 
-This repository provides a Maven project as a pre-assignment for [BIGCHA 2015](http://bigcha.net/).
+This repository provides a Maven project as a pre-assignment for Sakamoto's lectures about Hadoop (e.g. [BIGCHA](http://bigcha.net/) and TopSE).
 The project includes a simulated Hadoop MapReduce framework working on a pure Java environment.
 Note that this simulated framework has some differences from the official framework.
 
