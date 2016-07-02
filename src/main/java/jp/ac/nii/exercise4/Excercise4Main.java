@@ -22,6 +22,9 @@ public class Excercise4Main {
 		// TODO: 課題4： 科目名と点数のペアが記載されている score.csv を対象として、各科目の標準偏差を計算してください。
 		// また、jp.ac.nii.exercise4.Exercise4Test のテストが通ることを確認して下さい。
 
+		// この課題では、設定情報を受け渡す仕組み（Configurationオブジェクト）を使って、
+		// 標準偏差を計算するジョブに、平均値の計算ジョブが出力する計算結果を渡します。
+
 		// 参考資料: Googleで「Hadoop 標準偏差」などのキーワードで検索すると良いでしょう。
 		// 注意: このファイルは完成しています。
 
@@ -55,7 +58,9 @@ public class Excercise4Main {
 
 	private static Job<Long, String, String, Integer, String, Double> createStandardDeviationJob()
 			throws FileNotFoundException {
+		// 平均値の計算結果を格納しているConfigurationオブジェクトを取得
 		Configuration conf = createConfiguration();
+		// 標準偏差を計算するジョブにConfigurationオブジェクトを渡す
 		Job<Long, String, String, Integer, String, Double> sdJob = Job.getInstance(conf);
 
 		sdJob.setInputFormatClass(FileInputFormat.class);

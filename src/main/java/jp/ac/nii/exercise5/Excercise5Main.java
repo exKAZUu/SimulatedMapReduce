@@ -12,7 +12,7 @@ import jp.ac.nii.mapreduceframework.Job;
 import jp.ac.nii.mapreduceframework.util.Util;
 
 /**
- *　このファイルは完成しています。
+ * このファイルは完成しています。
  */
 public class Excercise5Main {
 	public static void main(String[] args) throws FileNotFoundException, InstantiationException, IllegalAccessException,
@@ -20,6 +20,9 @@ public class Excercise5Main {
 
 		// TODO: 課題5： 科目名と点数のペアが記載されている score.csv を対象として、各科目の標準偏差を計算してください。
 		// また、jp.ac.nii.exercise5.Exercise5Test のテストが通ることを確認して下さい。
+
+		// この課題では、分散キャッシュの仕組みを使って、標準偏差を計算するジョブから、
+		// 平均値の計算結果を格納しているファイル"exercise5_average.tsv"を読み込めるようにします。
 
 		// 参考資料: Googleで「Hadoop 分散キャッシュ」などのキーワードで検索すると理解が深まります。（課題には不要だと思いますが。）
 
@@ -43,10 +46,10 @@ public class Excercise5Main {
 		FileInputFormat.addInputPath(averageJob, Paths.get("score.csv"));
 		averageJob.setOutputFormatClass(FileOutputFormat.class);
 		FileOutputFormat.setOutputPath(averageJob, Paths.get("exercise5_average"));
-		
+
 		averageJob.setMapperClass(AverageCalculationMapper.class);
 		averageJob.setReducerClass(AverageCalculationReducer.class);
-		
+
 		averageJob.setNumReduceTasks(10);
 		return averageJob;
 	}
@@ -61,10 +64,10 @@ public class Excercise5Main {
 		FileInputFormat.addInputPath(sdJob, Paths.get("score.csv"));
 		sdJob.setOutputFormatClass(FileOutputFormat.class);
 		FileOutputFormat.setOutputPath(sdJob, Paths.get("exercise5"));
-		
+
 		sdJob.setMapperClass(StandardDeviationCalculationMapper.class);
 		sdJob.setReducerClass(StandardDeviationCalculationReducer.class);
-		
+
 		sdJob.setNumReduceTasks(10);
 		return sdJob;
 	}
