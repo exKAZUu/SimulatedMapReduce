@@ -17,6 +17,13 @@ You should see the detailed instructions in the Excercise[1-6]Main classes.
 4. Select all projects
 5. Push Finish
 
+If you face a problem caused by the inconsistency between the required JDK version and your PC's JDK version, please modify the following statements in `pom.xml`.
+
+```
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+```
+
 ## Excercises
 
 1. Excercise 1  
